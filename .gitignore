@@ -18,8 +18,7 @@ dist/
 target/
 
 # JetBrains IDE
-.idea/
-out/
+
 
 # Unit test reports
 TEST*.xml
