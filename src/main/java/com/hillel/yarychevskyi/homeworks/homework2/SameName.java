@@ -1,4 +1,4 @@
 package com.hillel.yarychevskyi.homeworks.homework2;
 
-public class Main {
+public class SameName {
 }
