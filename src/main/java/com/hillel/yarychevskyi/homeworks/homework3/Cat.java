@@ -1,28 +1,28 @@
 package com.hillel.yarychevskyi.homeworks.homework3;
 
-public class Cat implements Running, Swimming{
-    private String Name;
+public class Cat extends Animal{
+    private String name;
+    private int runCat = 180;
+    public static int counter;
+
+    public static int getCounter(){
+        return counter;
+    }
 
     public Cat(String name) {
-        Name = name;
-    }
-
-    public String getName() {
-        return Name;
-    }
-
-    public void setName(String name) {
-        Name = name;
+        this.name = name;
+        counter++;
     }
 
     @Override
-    public void run() {
-        System.out.println("Cat run....");
+    void run() {
+        System.out.println(name + " running" + " " + runCat + " metres");
 
     }
 
     @Override
-    public void swim() {
+    void swim() {
+        System.out.println("cat can not swim");
 
     }
 }
